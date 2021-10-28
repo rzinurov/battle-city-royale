@@ -1,0 +1,45 @@
+{
+  "name": "bcr",
+  "version": "1.0.0",
+  "description": "Battle City Royal",
+  "scripts": {
+    "start": "parcel src/index.html -p 8000",
+    "build": "parcel build src/index.html --public-url '.' --out-dir dist --no-source-maps",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
+  },
+  "author": "rzinurov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rzinurov/bcr.git"
+  },
+  "homepage": "https://rzinurov.github.io/bc/",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "cssnano": "^4.1.11",
+    "eslint": "^6.8.0",
+    "minimist": ">=1.2.2",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-clean-easy": "^1.0.2",
+    "parcel-plugin-static-files-copy": "^2.4.3",
+    "postcss": "^8.3.11",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@mikewesthad/dungeon": "^2.0.1",
+    "mrpas": "^2.0.0",
+    "phaser": "^3.55.2",
+    "phaser3-rex-plugins": "^1.1.62"
+  },
+  "parcelCleanPaths": [
+    "dist"
+  ],
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  }
+}
